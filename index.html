@@ -19,11 +19,11 @@
         <!--aggiungi elementi-->
         <div class="container add-activites">
 
-            <input type="text" placeholder="Aggiungi attivit&agrave;">
+            <input type="text" placeholder="Aggiungi attivit&agrave;" v-model="inputValue">
 
-            <button>Aggiungi</button>
+            <button @click="addTask">Aggiungi</button>
         </div>
-        
+
         <!--lista con elementi-->
         <div class="container">
             <div class="list">

@@ -17,6 +17,7 @@ createApp({
                     done : false
                 }
             ],
+            inputValue: ' ',
         }
     },
     methods: {
@@ -29,6 +30,19 @@ createApp({
                 'con indice', objectIndex
 			)
 		},
+
+        addTask(){
+            console.log('add task:', this.inputValue)
+			// const newTask = this.inputValue
+			// this.tasks.push(constructor (newTask))
+            // console.log(tasks)
+			// this.inputValue = ''
+        },
+
+        // constructor (text){
+        //     this.text = text
+
+        // }
+
 	},
 }).mount('#app')
-
