@@ -11,7 +11,18 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
     <div id="app">
-        
+        <div class="container">
+            <h1>La tua lista</h1>
+        </div>
+        <div class="container">
+            <div class="List">
+                <ul>
+                    <li v-for="textlist in tasks" :class="((textlist.done) === true)? 'delete' : ' ' ">
+                        {{ textlist.text}}
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
     <script src="./js/app.js"></script>
 </body>
