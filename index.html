@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/2cbecd44b4.js" crossorigin="anonymous"></script>
     <title>Vue To Do List</title>
 </head>
 <body>
@@ -15,10 +16,15 @@
             <h1>La tua lista</h1>
         </div>
         <div class="container">
-            <div class="List">
+            <div class="list">
                 <ul>
-                    <li v-for="textlist in tasks" :class="((textlist.done) === true)? 'delete' : ' ' ">
-                        {{ textlist.text}}
+                    <li v-for="textlist in tasks" >
+                        
+                        <div :class="((textlist.done) === true)? 'delete' : ' ' ">
+                            {{ textlist.text}}
+                        </div>
+                        
+                        <i class="remuove fa-solid fa-xmark"></i>
                     </li>
                 </ul>
             </div>

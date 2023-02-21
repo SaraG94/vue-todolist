@@ -6,6 +6,8 @@
 
 .container{
     padding: 20px 40px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 ul{
@@ -14,4 +16,10 @@ ul{
 
 .delete{
     text-decoration: line-through;
+}
+
+.list li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
