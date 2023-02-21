@@ -33,16 +33,11 @@ createApp({
 
         addTask(){
             console.log('add task:', this.inputValue)
-			// const newTask = this.inputValue
-			// this.tasks.push(constructor (newTask))
-            // console.log(tasks)
-			// this.inputValue = ''
+			const newText = this.inputValue
+
+            this.tasks.push({ text:newText, done:false })
+            console.log(this.tasks)
+			this.inputValue = ''
         },
-
-        // constructor (text){
-        //     this.text = text
-
-        // }
-
 	},
 }).mount('#app')
