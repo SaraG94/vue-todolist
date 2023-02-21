@@ -18,9 +18,36 @@ ul{
     text-decoration: line-through;
 }
 
-.list li,
-.add-activites{
+.add-activites,
+.list li{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap:20px;
+}
+
+.title h1{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.add-activites .add-list{
+    flex-grow: 1;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.add-activites button{
+    padding: 6px 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: darkseagreen;
+
+}
+
+.list li{
+    border-bottom: 1px solid gray;
+    padding: 5px;
+    line-height: 24px;
 }

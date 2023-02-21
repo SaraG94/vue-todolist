@@ -12,14 +12,14 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
     <div id="app">
-        <div class="container">
+        <div class="container title">
             <h1>La tua lista</h1>
         </div>
 
         <!--aggiungi elementi-->
         <div class="container add-activites">
 
-            <input type="text" placeholder="Aggiungi attivit&agrave;" v-model="inputValue">
+            <input class="add-list" type="text" placeholder="Aggiungi attivit&agrave;" v-model="inputValue">
 
             <button @click="addTask">Aggiungi</button>
         </div>

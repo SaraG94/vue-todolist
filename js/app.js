@@ -25,18 +25,12 @@ createApp({
 		removeTask(objectIndex) {
 		
             this.tasks.splice(objectIndex,1);
-            console.log(
-				'elimino l.oggetto', this.tasks[objectIndex],
-                'con indice', objectIndex
-			)
 		},
 
         addTask(){
-            console.log('add task:', this.inputValue)
 			const newText = this.inputValue
 
             this.tasks.push({ text:newText, done:false })
-            console.log(this.tasks)
 			this.inputValue = ''
         },
 	},
