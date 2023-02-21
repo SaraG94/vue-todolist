@@ -18,13 +18,13 @@
         <div class="container">
             <div class="list">
                 <ul>
-                    <li v-for="textlist in tasks" >
+                    <li v-for="(textlist, index) in tasks" >
                         
                         <div :class="((textlist.done) === true)? 'delete' : ' ' ">
                             {{ textlist.text}}
                         </div>
                         
-                        <i class="remuove fa-solid fa-xmark"></i>
+                        <i class="remuove fa-solid fa-xmark" @click="removeTask(index)"></i>
                     </li>
                 </ul>
             </div>

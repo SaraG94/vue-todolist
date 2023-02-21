@@ -18,6 +18,17 @@ createApp({
                 }
             ],
         }
-    }
+    },
+    methods: {
+	
+		removeTask(objectIndex) {
+		
+            this.tasks.splice(objectIndex,1);
+            console.log(
+				'elimino l.oggetto', this.tasks[objectIndex],
+                'con indice', objectIndex
+			)
+		},
+	},
 }).mount('#app')
 
