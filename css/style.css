@@ -18,7 +18,8 @@ ul{
     text-decoration: line-through;
 }
 
-.list li{
+.list li,
+.add-activites{
     display: flex;
     align-items: center;
     justify-content: space-between;
