@@ -28,7 +28,11 @@ createApp({
 		},
 
         addTask(){
-			const newText = this.inputValue
+			const newText = this.inputValue.trim()
+
+            if(newText === ''){
+                return
+            }
 
             this.tasks.push({ text:newText, done:false })
 			this.inputValue = ''

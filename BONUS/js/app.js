@@ -28,10 +28,26 @@ createApp({
 		},
 
         addTask(){
-			const newText = this.inputValue
+			const newText = this.inputValue.trim()
+
+            if(newText === ''){
+                return
+            }
 
             this.tasks.push({ text:newText, done:false })
 			this.inputValue = ''
+        },
+
+        changeDone(textlist){
+
+            if(textlist.done === true){
+                textlist.done = false
+            }else{
+                textlist.done =true
+            }
+
+            //al posto di if posso usare la negazione
+            //textlist.done = !textlist.done
         }
 	}
 }).mount('#app')

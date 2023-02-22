@@ -28,13 +28,13 @@
         <div class="container">
             <div class="list">
                 <ul>
-                    <li v-for="(textlist, index) in tasks" >
+                    <li v-for="(textlist, index) in tasks" @click="changeDone(textlist)" >
                         
                         <div :class="((textlist.done) === true)? 'delete' : ' ' ">
                             {{ textlist.text}}
                         </div>
                         
-                        <i class="remove fa-solid fa-xmark" @click="removeTask(index)"></i>
+                        <i class="remove fa-solid fa-xmark" @click.stop="removeTask(index)"></i>
                     </li>
                 </ul>
             </div>
